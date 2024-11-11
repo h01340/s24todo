@@ -1,6 +1,5 @@
 {
-  "homepage": "https://h01340.github.io/s24todo/",
-  "name": "todo",
+    "name": "todo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
