@@ -13,7 +13,7 @@ export default function MyTabs() {
     };
 
     return (
-        <div>
+        <div style={{ width: '100%' }}>
             <Tabs value={value} onChange={handleChange}>
                 <Tab value="home" label="Home" />
                 <Tab value="todos" label="Todos" />
@@ -21,15 +21,16 @@ export default function MyTabs() {
 
             {/* Consistent styling for both tab contents */}
             {value === 'home' && (
-
-                <Home />
+                <div style={{ padding: '20px' }}>
+                    <Home />
+                </div>
 
             )}
 
             {value === 'todos' && (
-
-                <Todos />
-
+                <div style={{ padding: '20px' }}>
+                    <Todos />
+                </div>
             )}
         </div>
     );
